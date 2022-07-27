@@ -1,0 +1,74 @@
+
+  <%- include('partials/header') %>
+
+  <header class="nav">
+    <h1>Co-Curricular Activities</h1>
+    <div class="nav_buttons">
+        <button id="Enter_record">
+                Enter Record
+        </button>
+        <button id="view">
+                view
+        </button>
+    </div>
+</header>
+<p align="right" class="iframe">
+    <iframe src="co-curr-intrn" width="60%" height="500">
+    </iframe>
+</p>
+<table border="3px" class="tableee">
+    <tr><td><a href="#" id="course">Course/Internship</a></td></tr>
+    <tr><td><a href="#" id="prof">Professional Activities</a></td></tr>
+    <tr><td><a href="#" id="compete">Competitions</a></td></tr>
+    <tr><td><a href="#" id="publication">Publications / Confrences</a></td></tr>
+</table>
+<div align="right" class="submit">
+    <button type="submit">
+            Submit
+    </button>
+    <button type="reset">
+            Clear
+    </button>
+
+</div>
+
+
+<form>
+    <div class="type">
+        <label>Type :</label>
+        <select id="type">
+            <option value="Workshop/Course">Workshop/Course</option>
+            <option value="Internship">Internship</option>
+        </select>
+    </div>
+    <div class="course_">
+        <label>Name of Course/Internship :</label>
+        <input type="text" id="course">
+    </div>
+    <div class="duration_">
+        <label>Duration(in days) :</label>
+        <input type="number" id="duration">
+    </div>
+    <div class="start_date_">
+        <label>Start Date :</label>
+        <input type="date" id="start_date">
+    </div>
+    <div class="venue_">
+        <label>Venue : </label>
+        <input type="text">
+    </div>
+    <div class="organizedby_">
+        <label>Organized By : </label>
+        <input type="text" id="organizedby">
+    </div>
+    <div class="upload_certificate">
+        <label>Upload Certificate</label>
+        <input type="file" id="uploadcertificate">
+    </div>
+    <div class="description">
+        <label>Description : </label>
+        <textarea type="text" id="description_"></textarea>
+    </div>
+</form>
+
+<%- include('partials/footer') %>

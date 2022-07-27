@@ -1,0 +1,234 @@
+
+    <%- include('partials/header') %>
+    <!-- <h1>Co-Curricular Activities</h1> -->
+    <div class="tabs">
+        <div class="tab">
+          <input type="radio" id="tab-1" name="tab-group-1" checked>
+          <label for="tab-1">Courses/Internships</label>
+          <div class="content">
+            <header class="nav">
+          
+                    <table class="form">
+                    <tr>
+                        <td>Type :</td>
+                       <td><select id="type" >
+                            <option value="Workshop/Course" name="type" >Workshop/Course</option>
+                            <option value="Internship" name="type">Internship</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Name of Course/Internship :</td>
+                        <td><input type="text" id="course" name="course"></td>
+                    </tr>
+                    <tr>
+                        <td>Duration(in days) :</td>
+                        <td><input type="number" id="duration" name="duration"></td>
+                    </tr>
+                    <tr>
+                        <td>Start Date :</td>
+                        <td><input type="date" id="start_date" name="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Venue : </td>
+                        <td><input type="text" name="venue"></td>
+                    </tr>
+                    <tr>
+                        <td>Organized By : </td>
+                        <td><input type="text" id="organizedby" name="organized"></td>
+                    </tr>
+                 
+                    
+                    <tr>
+                        <td>Description : </td>
+                        <td><textarea type="text" id="description_" name="description"></textarea></td>
+                    </tr>
+                    </table>  
+                    
+                <form action="/image" method="POST" enctype="multipart/form-data" align="center">
+                    <label for="image">Upload Image</label>
+                    <input type="file" id="image" 
+                           name="image" value="" required>
+                           <button type="submit" align="center">submit</button>
+                </form>
+                <form action="/curricular" method="post">
+                <button type="submit" class="submit">Submit</button>  
+                </form>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" id="tab-2" name="tab-group-1">
+          <label for="tab-2">Professional Activities</label>
+          <div class="content">
+            
+            <form action="/curricular" method="post">
+                <table class="form">
+            <tr>
+                <td>Type :</td>
+                <td><select id="type">
+                    <option value="seminar">Seminar</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Name of Seminar : </td>
+                <td><input type="text" id="seminar"></td>
+            </tr>
+            <tr>
+                <td>Duration(in days) :</td>
+                <td><input type="number" id="duration"></td>
+            </tr>
+            <tr>
+                <td>Start Date :</td>
+                <td><input type="date" id="start_date"></td>
+            </tr>
+            <tr>
+                <td>Venue : </td>
+                <td><input type="text" id:"venue"></td>
+            </tr>
+            <tr>
+                <td>Organized By : </td>
+                <td><input type="text" id="organizedby"></td>
+            </tr>
+            <tr>
+                <td>Upload Certificate</td>
+                <td><input type="file" id="uploadcertificate"></td>
+            </tr>
+            <tr>
+                <td>Description : </td>
+                <td><textarea type="text" id="description_"></textarea></td>
+            </tr>
+        </table>
+        <button type="submit" class="submit">Submit</button>
+        </form>
+            
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" id="tab-3" name="tab-group-1">
+          <label for="tab-3">Competitions</label>
+          <div class="content">
+           
+            <form action="/curricular" method="post">
+                <table class="form" border="none">
+                <tr>
+                    <td>Event Name : </td>
+                    <td><input type="text" id="eventname"></td>
+                </tr>
+                <tr>
+                    <td>Level :</td>
+                    <td><select id="level">
+                        <option value="college_level">College Level</option>
+                        <option value="inter_college_level">Inter College Level</option>
+                        <option value="university_level">University level</option>
+                        <option value="national_level">National Level</option>
+                        <option value="inter_national_level">Inter National Level</option>
+                        <option value="others">Others</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Venue : </td>
+                   <td><input type="text" id:"venue"></td>
+                </tr>
+                <tr>
+                    <td>Date :</td>
+                    <td><input type="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td>Position secured : </td>
+                    <td><input type="text" id="position_secured"></td>
+                </tr>
+                <tr>
+                    <td>Organized By : </td>
+                    <td><input type="text" id="organizedby"></td>
+                </tr>
+                <tr>
+                    <td>Upload Certificate : </td>
+                    <td><input type="file" id="uploadcertificate"></td>
+                </tr>
+                <tr>
+                    <td>Description :  </td>
+                   <td><textarea type="text" id="description_"></textarea></td>
+                </tr>
+            </table> 
+            <button type="submit" class="submit">Submit</button>
+           
+            </form>
+
+          </div>
+        </div>
+        <div class="tab">
+            <input type="radio" id="tab-4" name="tab-group-1">
+            <label for="tab-4">Publications /conferences</label>
+            <div class="content">
+             
+                <form action="/curricular" method="post">
+                    <table class="form" border="none">
+                    <tr>
+                        <td>Type :</td>
+                        <td>
+                            <select id="type_">
+                                <option value="International Journal">International Journal</option>
+                                <option value="International Confrence">International Confrence</option>
+                                <option value="National Confrence">National Confrence</option>
+                                <option value="National Journal">National Journal</option>
+                                <option value="Technical paper Representation">Technical paper Representation</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name of Conference/Journal/Event : </td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td> Name of the Paper : </td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td> Impact Factor : </td>
+                        <td><input type="text"></td>
+                    </tr>
+                   <tr>
+                        <td> Volume :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                   <tr>
+                        <td> Page Number :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                   <tr>
+                        <td> Date : </td>
+                        <td><input type="date"></td>
+                    </tr>
+                   <tr>
+                        <td> DOI </td>
+                        <td><input type="text"></td>
+                    </tr>
+                   <tr>
+                        <td> Author </td>
+                        <td><input type="text"></td>
+                    </tr>
+                   <tr>
+                        <td> Co-Author </td>
+                        <td><input type="text" placeholder="if any"></td>
+                    </tr>
+            
+                   <tr>
+                        <td> Organized by : </td>
+                        <td><input type="text"></td>
+                    </tr>
+                   <tr>
+                        <td> Upload Certificate : </td>
+                        <td><input type="file"></td>
+                    </tr>
+                </table>
+                
+                <button type="submit" class="submit">Submit</button>
+            </form>
+                
+
+                
+            </div>
+          </div>
+      </div>
+    <%- include('partials/footer') %>

@@ -1,0 +1,137 @@
+/* 
+
+
+
+
+    width: 100%;
+} 
+.submit button{
+    margin-top: 150px;
+    width: 30%;
+    background-color: #6E85B7;
+    border: none;
+    height: 20px;
+    color: white;
+}
+.submit button:hover{
+    background-color: #263d6e;
+}
+.tableee{
+    width: 20%;
+    border: 3px;
+    display: absolute;
+    margin-top: -350px;
+    margin-left: 30px;
+    height: 200px;
+}
+.form tr{
+height: 40px;
+}
+.table tr td a:link{
+    color: black;
+}
+.table tr td a:visited{
+    color: black;
+}
+.table tr td a:active{
+    background-color:#263d6e;
+    color: white;
+}
+footer{
+    display: block;
+    margin: auto;
+    color: grey;
+} */
+
+
+.submit{
+    width: 100%;
+}
+.submit button{
+    margin-top: 150px;
+    width: 30%;
+    background-color: #FF7BA9;
+    border: none;
+    height: 20px;
+    color: white;
+}
+.submit button:hover{
+    background-color: #263d6e;
+}
+.tabs {
+    position: relative;
+    min-height: 200px; /* This part sucks */
+    clear: both;
+    margin: 25px 0;
+  }
+  .tab {
+    float: left;
+  }
+  .tab label {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: 100px;
+    position: relative;
+    left: 1px;
+  }
+  .tab [type="radio"] {
+    opacity: 0;
+  }
+  .content {
+      height: 600px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    /* background: white; */
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+  }
+  .content > * {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.6s ease;
+  }
+  [type="radio"]:focus ~ label {
+    ouline: 2px solid blue;
+  }
+  [type="radio"]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+  }
+  [type="radio"]:checked ~ label ~ .content {
+    z-index: 1;
+  }
+  [type="radio"]:checked ~ label ~ .content > * {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  form .form{
+  border: none;    
+  }
+  .submit{
+      position: relative;
+      margin-top: 40px;
+      width: 200px;
+      border-radius: 4px;
+      border: none;
+      background-color:#263d6e;
+      margin-left :600px;
+      color: white;
+      height: 24px;
+  }
+  /* .form{
+    width: 20%;
+    border: 3px;
+    display: absolute;
+    margin-top: -350px;
+    margin-left: 30px;
+    height: 200px;
+}
+.form tr{
+height: 40px;
+} */
